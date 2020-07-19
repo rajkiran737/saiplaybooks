@@ -1,0 +1,9 @@
+
+
+--- # My First Yaml Script
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  gather_facts: yes
+

@@ -1,0 +1,5 @@
+
+
+
+- name: install apache on centOS 7
+  yum: pkg=httpd state=latest

@@ -1,0 +1,13 @@
+
+
+--- # My first Yaml Playbook
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  vars:
+          pkgname: httpd
+  tasks:
+          - name: install httpd server on CentOS7
+            action: yum name='{{pkgname}}' state=installed
+     
